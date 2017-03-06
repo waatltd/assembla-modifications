@@ -1,0 +1,88 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "fronthack",
+        "scope": null,
+        "escapedName": "fronthack",
+        "name": null,
+        "rawSpec": "fronthack",
+        "spec": "/Users/michal/Projects/fronthack",
+        "type": "directory"
+      },
+      "/Users/michal/Projects"
+    ]
+  ],
+  "_from": "fronthack",
+  "_id": "fronthack@2.0.3",
+  "_inCache": true,
+  "_location": "/fronthack",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "fronthack",
+    "scope": null,
+    "escapedName": "fronthack",
+    "name": null,
+    "rawSpec": "fronthack",
+    "spec": "/Users/michal/Projects/fronthack",
+    "type": "directory"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:fronthack",
+  "_shasum": "70ef38979dd5a5ea6005b98aba2d44b62b1cec24",
+  "_shrinkwrap": null,
+  "_spec": "fronthack",
+  "_where": "/Users/michal/Projects",
+  "author": {
+    "name": "Michal Kokocinski",
+    "email": "michal@kokocinski.me",
+    "url": "http://kokocinski.me"
+  },
+  "bugs": {
+    "url": "https://github.com/frontcraft/fronthack/issues"
+  },
+  "dependencies": {},
+  "description": "The complete set of tools to convert designs into scalable, modular HTML and CSS",
+  "devDependencies": {
+    "flexboxgrid-sass": "^8.0.5",
+    "gulp": "~3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-livereload": "~3.8.1",
+    "gulp-mustache": "~2.3.0",
+    "gulp-rename": "~1.2.2",
+    "gulp-sass": "~3.1.0",
+    "gulp-watch": "~4.3.11"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "gitHead": "f2496659fba672a63d679fa0f34b756c4efad663",
+  "homepage": "http://fronthack.com",
+  "keywords": [
+    "css",
+    "sass",
+    "html",
+    "bem",
+    "smacss",
+    "ui",
+    "framework",
+    "styleguide",
+    "gulp"
+  ],
+  "license": "GPL-2.0",
+  "main": "gulpfile.js",
+  "name": "fronthack",
+  "optionalDependencies": {},
+  "readme": "> **Version 2 is here!**\n\n> New version of Fronthack introduces completly rearranged, more clear [file structure](https://github.com/frontcraft/fronthack/wiki/2.-File-structure-explanation) and a helpfull [commandline interface](https://www.npmjs.com/package/fronthack-cli) which automates installation and primary tasks.\n\n### Homepage - [fronthack.com](http://fronthack.com/)\n\n## Getting started\n\n### 1. You need to have Node.js installed on your system.\n\nIf you have not already done so, [click here for help](https://nodejs.org/en/download/package-manager/)\n\n\n### 2. Install Fronthack Command Line Interface\n\n```\nnpm install -g fronthack-cli\n```\n\n\n### 3. Create new Fronthack project in current path\n\n```\nfronthack init\n```\n\n### 4. Navigate to newly created fronthack directory and check out available commands\n\n```\ncd fronthack\nfronthack help\n```\n\n### 5. Start hacking\n\nRun `fronthack watch` to watch for changes you make in a *src* working directory. They will be authomatically compiled to a production ready *dist* directory. Use `fronthack new` command to create new Sass components. \n\nFronthack is a CSS framework and a tool to automate your workflow. Check out [How to work with Fronthack](https://github.com/frontcraft/fronthack/wiki/1.-How-to-work-with-Fronthack) wiki to learn how to use it properly.\n\n----------\n\nDevelopment Supported by [WAAT Ltd](http://waat.eu)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frontcraft/fronthack.git"
+  },
+  "scripts": {
+    "purgestyleguide": "./src/bin/purge_styleguide.sh"
+  },
+  "version": "2.0.3"
+}
