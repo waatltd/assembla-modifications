@@ -13,12 +13,7 @@ var paths = {
   sass: {
     input: 'src/sass/app.sass',
     allfiles: 'src/sass/**/*.+(scss|sass)',
-    output: 'docs/css'
-  },
-  mustache: {
-    input: './src/*.html',
-    allfiles: './src/**/*.{html,mustache}',
-    output: './docs'
+    output: 'dist/css'
   }
 };
 
@@ -37,22 +32,13 @@ gulp.task('sass', function () {
     .pipe(livereload());
 });
 
-// Define Mustache compiling task
-gulp.task('mustache', function() {
-  return gulp.src(paths.mustache.input)
-    .pipe(mustache())
-    .pipe(gulp.dest(paths.mustache.output));
-});
-
 
 // Listen folders for changes and apply defined tasks
 gulp.task('default', [
     'sass',
-    'mustache'
   ], function() {
   livereload.listen();
-  gulp.watch([paths.sass.allfiles, paths.mustache.allfiles], [
+  gulp.watch([paths.sass.allfiles], [
     'sass',
-    'mustache'
   ]);
 });
