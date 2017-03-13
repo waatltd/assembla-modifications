@@ -1,2 +1,24 @@
+$card-width: 400px
+
+
 #tickets-right-col-wrap
-  background-color: red !important
+
+  #ticket_list
+    display: flex
+    // Remove empty table tag
+    table:first-child
+      position: absolute
+    .s-table-header
+      width: $card-width
+      height: 30px
+      display: block
+      margin-right: -$card-width
+    .listing.tickets
+      margin: 32px 30px 0 -1px !important
+      width: $card-width
+      // Hide unwanted table elements
+      th,td
+        &:nth-last-of-type(1),
+        &:nth-last-of-type(3)
+          display: none
+          position: absolute
