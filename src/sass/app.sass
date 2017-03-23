@@ -1,24 +1,43 @@
 $card-width: 400px
 
 
+ul.menu-submenu
+  box-sizing: border-box
+
 #tickets-right-col-wrap
+  #resultsContainer
+    width: calc(100vw - 100px)
 
   #ticket_list
     display: flex
+    overflow-y: auto
+    height: calc(100vh - 135px)
     // Remove empty table tag
     table:first-child
       position: absolute
+    // Username header styling
     .s-table-header
       width: $card-width
+      min-width: $card-width
       height: 30px
       display: block
       margin-right: -$card-width
+    // User table of tickets styling
     .listing.tickets
-      margin: 32px 30px 0 -1px !important
-      width: $card-width
-      // Hide unwanted table elements
-      th,td
+      margin: 32px 30px 0 -2px !important
+      width: $card-width + 2px
+      th, td
+        white-space: normal !important
+        min-width: 0 !important
+        width: auto !important
+        // Hide unwanted table cells
         &:nth-last-of-type(1),
         &:nth-last-of-type(3)
           display: none
           position: absolute
+      .number p
+        padding: 0
+      // Hide unwanted cell elements.
+      .follow-star,
+      .list-action
+        display: none
