@@ -1,4 +1,4 @@
-$card-width: 400px
+$card-width: 440px
 
 
 ul.menu-submenu
@@ -11,7 +11,9 @@ ul.menu-submenu
   #ticket_list
     display: flex
     overflow-y: auto
-    height: calc(100vh - 135px)
+    // Calculate Tables container height: 100% screen height minus all ui elements
+    height: calc(100vh - 135px - 150px - 20px - 100px)
+    min-height: 400px
     // Remove empty table tag
     table:first-child
       position: absolute
@@ -30,11 +32,6 @@ ul.menu-submenu
         white-space: normal !important
         min-width: 0 !important
         width: auto !important
-        // Hide unwanted table cells
-        &:nth-last-of-type(1),
-        &:nth-last-of-type(3)
-          display: none
-          position: absolute
       .number p
         padding: 0
       // Hide unwanted cell elements.
